@@ -17,7 +17,7 @@
 			$this->password=$password;
             $this->role=$role;
 		}
-		
+
 		function getId(): int{
 			return $this->id;
 		}

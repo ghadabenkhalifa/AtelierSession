@@ -2,29 +2,23 @@
 include_once '../Model/Utilisateur.php';
 include_once '../Controller/UtilisateurC.php';
 $message="";
-// create an instance of the controller
 $userC = new UtilisateurC();
 if (isset($_POST["email"]) &&
     isset($_POST["password"])) {
-    if (
-        !empty($_POST["email"]) &&
+    if (!empty($_POST["email"]) &&
         !empty($_POST["password"]))
-    {
-        $message=$userC->connexionUser($_POST["email"],$_POST["password"]);
+    {   $message=$userC->connexionUser($_POST["email"],$_POST["password"]);
         session_start();
         $_SESSION['e'] = $_POST["email"];// on stocke dans le tableau une colonne ayant comme nom "e",
         //  avec l'email à l'intérieur
-        $_SESSION['p'] = $_POST["password"];// on stocke dans le tableau une colonne ayant comme nom "p",
-        //  avec le mot de passe à l'intérieur
         $_SESSION['r']=$message;//// on stocke dans  le tableau une colonne ayant comme nom "r",
         ///  avec le rôle de chaque utilisateur à l'intérieur
         if($_SESSION['r']==='admin'){
-            header('Location:Admin.php');}
+            header('Location:ProfilAdmin.php');}
         else{
-            header('Location:user.php');} }
+            header('Location:ProfilUser.php');} }
     else
-        $message = "Missing information";
-}
+        $message = "Missing information";}
 
 
 ?>
@@ -47,9 +41,16 @@ if (isset($_POST["email"]) &&
         </tr>
         <tr class="tablerow">
             <td>
-                <input type="text" name="email" placeholder="Email" class="login-input"></td>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input type="text" name="email" placeholder="Email" class="login-input">
+            </td>
         </tr>
         <tr class="tablerow">
+            <td>
+                <label for="password">Password:</label>
+            </td>
             <td>
                 <input type="password" name="password" placeholder="Password" class="login-input"></td>
         </tr>

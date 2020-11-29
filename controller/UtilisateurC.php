@@ -122,13 +122,14 @@
             catch (Exception $e){
                     $message= " ".$e->getMessage();
             }
-
           return $message;
         }
+
+
         function deconnexionUser(){
             session_start();
             session_destroy();
-            echo 'You have been logged out. <a href="./connexion.php">Go back</a>';
+            echo 'Vous êtes déconnecté. <a href="./connexion.php">Se connecter ?</a>';
         }
 	}
 
