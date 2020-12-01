@@ -14,16 +14,16 @@
         isset($_POST["prenom"]) &&
         isset($_POST["email"]) && 
         isset($_POST["login"]) && 
-        isset($_POST["pass"])&&
-        isset($_POST["role"])
+        isset($_POST["pass"])
+
     ) {
         if (
             !empty($_POST["nom"]) && 
             !empty($_POST["prenom"]) && 
             !empty($_POST["email"]) && 
             !empty($_POST["login"]) && 
-            !empty($_POST["pass"])&&
-            isset($_POST["role"])
+            !empty($_POST["pass"])
+
         ) {
             $user = new Utilisateur(
                 $_POST['nom'],
@@ -31,7 +31,7 @@
                 $_POST['email'],
                 $_POST['login'],
                 $_POST['pass'],
-                $_POST["role"]
+
             );
             $userC->ajouterUtilisateur($user);
             header('Location:afficherUtilisateurs.php');
@@ -104,21 +104,6 @@
                         <input type="password" name="pass" id="pass">
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <label for="role">Rôle:
-                        </label>
-                    </td>
-                    <td>
-                        <select name="role" id="role">
-                            <option value="">--Votre rôle--</option>
-                            <option value="admin">Administrateur</option>
-                            <option value="user">Utilisateur</option>
-
-                        </select>
-                    </td>
-                </tr>
-                
                 <tr>
                     <td></td>
                     <td>

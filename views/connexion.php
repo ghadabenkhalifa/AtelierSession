@@ -11,12 +11,13 @@ if (isset($_POST["email"]) &&
         session_start();
         $_SESSION['e'] = $_POST["email"];// on stocke dans le tableau une colonne ayant comme nom "e",
         //  avec l'email à l'intérieur
-        $_SESSION['r']=$message;//// on stocke dans  le tableau une colonne ayant comme nom "r",
-        ///  avec le rôle de chaque utilisateur à l'intérieur
-        if($_SESSION['r']==='admin'){
-            header('Location:ProfilAdmin.php');}
+
+        if($message!='pseudo ou le mot de passe est incorrect'){
+           header('Location:ProfilUser.php');}
         else{
-            header('Location:ProfilUser.php');} }
+            $message='pseudo ou le mot de passe est incorrect';
+        }
+    }
     else
         $message = "Missing information";}
 

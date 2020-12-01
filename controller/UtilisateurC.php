@@ -5,8 +5,8 @@
 	class UtilisateurC {
 		
 		function ajouterUtilisateur($Utilisateur){
-			$sql="INSERT INTO Utilisateur (nom, prenom, email, login, password, role) 
-			VALUES (:nom,:prenom,:email, :login, :password, :role)";
+			$sql="INSERT INTO Utilisateur (nom, prenom, email, login, password) 
+			VALUES (:nom,:prenom,:email, :login, :password)";
 			$db = config::getConnexion();
 			try{
 				$query = $db->prepare($sql);
@@ -17,7 +17,7 @@
 					'email' => $Utilisateur->getEmail(),
 					'login' => $Utilisateur->getLogin(),
 					'password' => $Utilisateur->getPassword(),
-                    'role' => $Utilisateur->getRole(),
+
 				]);			
 			}
 			catch (Exception $e){
@@ -125,12 +125,6 @@
           return $message;
         }
 
-
-        function deconnexionUser(){
-            session_start();
-            session_destroy();
-            echo 'Vous êtes déconnecté. <a href="./connexion.php">Se connecter ?</a>';
-        }
 	}
 
 
