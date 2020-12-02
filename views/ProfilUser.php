@@ -17,7 +17,7 @@ if(empty($_SESSION['e']))
 <button><a href="deconnexion.php">Déconnecter</a></button>
 <hr>
 <?php
-// Ici on est bien loggué comme étant user, on affiche un message
+// Il est bien connecté
 echo 'Bienvenue Utilisateur ', $_SESSION['e'];
 ?>
 </body>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../Model/Utilisateur.php';
 include_once '../Controller/UtilisateurC.php';
 $message="";
@@ -8,20 +9,15 @@ if (isset($_POST["email"]) &&
     if (!empty($_POST["email"]) &&
         !empty($_POST["password"]))
     {   $message=$userC->connexionUser($_POST["email"],$_POST["password"]);
-        session_start();
-        $_SESSION['e'] = $_POST["email"];// on stocke dans le tableau une colonne ayant comme nom "e",
+         $_SESSION['e'] = $_POST["email"];// on stocke dans le tableau une colonne ayant comme nom "e",
         //  avec l'email à l'intérieur
-
         if($message!='pseudo ou le mot de passe est incorrect'){
            header('Location:ProfilUser.php');}
         else{
             $message='pseudo ou le mot de passe est incorrect';
-        }
-    }
+        }}
     else
         $message = "Missing information";}
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

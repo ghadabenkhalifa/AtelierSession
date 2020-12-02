@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04dc7681-ab49-410b-b948-800aabc9251b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/UtilisateurC.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/UtilisateurC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/AjouterUtilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/AjouterUtilisateur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/connexion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,9 @@
       <updated>1606394505843</updated>
       <workItem from="1606394507274" duration="15000" />
       <workItem from="1606394738901" duration="14883000" />
-      <workItem from="1606823706451" duration="4334000" />
+      <workItem from="1606823706451" duration="5708000" />
+      <workItem from="1606914776014" duration="296000" />
+      <workItem from="1606920225800" duration="849000" />
     </task>
     <servers />
   </component>
@@ -81,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="59" y="205" key="#SQL_Dialects" timestamp="1606399652003">
@@ -95,9 +97,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606397310184" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1606401753361">
+    <state x="184" y="8" key="SettingsEditor" timestamp="1606899159606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606401753361" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606899159606" />
   </component>
 </project>
