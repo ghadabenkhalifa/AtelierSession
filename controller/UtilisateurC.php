@@ -3,29 +3,29 @@
 	require_once '../Model/Utilisateur.php';
 
 	class UtilisateurC {
-		
-		function ajouterUtilisateur($Utilisateur){
-			$sql="INSERT INTO Utilisateur (nom, prenom, email, login, password) 
-			VALUES (:nom,:prenom,:email, :login, :password)";
-			$db = config::getConnexion();
-			try{
-				$query = $db->prepare($sql);
-			
-				$query->execute([
-					'nom' => $Utilisateur->getNom(),
-					'prenom' => $Utilisateur->getPrenom(),
-					'email' => $Utilisateur->getEmail(),
-					'login' => $Utilisateur->getLogin(),
-					'password' => $Utilisateur->getPassword(),
 
-				]);			
-			}
-			catch (Exception $e){
-				echo 'Erreur: '.$e->getMessage();
-			}			
-		}
-		
-		function afficherUtilisateurs(){
+        function ajouterUtilisateur($Utilisateur){
+            $sql="INSERT INTO Utilisateur (nom, prenom, email, login, password) 
+			VALUES (:nom,:prenom,:email, :login, :password)";
+            $db = config::getConnexion();
+            try{
+                $query = $db->prepare($sql);
+
+                $query->execute([
+                    'nom' => $Utilisateur->getNom(),
+                    'prenom' => $Utilisateur->getPrenom(),
+                    'email' => $Utilisateur->getEmail(),
+                    'login' => $Utilisateur->getLogin(),
+                    'password' => $Utilisateur->getPassword()
+                ]);
+            }
+            catch (Exception $e){
+                echo 'Erreur: '.$e->getMessage();
+            }
+        }
+
+
+        function afficherUtilisateurs(){
 			
 			$sql="SELECT * FROM Utilisateur";
 			$db = config::getConnexion();

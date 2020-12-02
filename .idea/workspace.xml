@@ -22,11 +22,7 @@
     <list default="true" id="04dc7681-ab49-410b-b948-800aabc9251b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/UtilisateurC.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/UtilisateurC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Utilisateur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/AjouterUtilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/AjouterUtilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/ProfilAdmin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/deconnexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/deconnexion.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
       <updated>1606394505843</updated>
       <workItem from="1606394507274" duration="15000" />
       <workItem from="1606394738901" duration="14883000" />
-      <workItem from="1606823706451" duration="1000000" />
+      <workItem from="1606823706451" duration="4334000" />
     </task>
     <servers />
   </component>
